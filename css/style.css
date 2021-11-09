@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+* {
+    font-family: 'Dongle', sans-serif;
+    transition: all 0.4s ease-in-out;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-text: #04080F;
+    --yellow-button: #ff9505;
+    --blue-button: #016fb9;
+    --white-color: #f2efe9;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--dark-text);
+    width: 100%;
+}
+
+.buttonOne {
+    outline: none;
+    background-color: var(--yellow-button);
+    border: 0;
+    border-radius: 6px;
+    color: var(--white-color);
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.buttonOne:hover {
+    background-color: transparent;
+    color: var(--dark-text);
+    border: 1px solid var(--yellow-button);
+}
+
+.buttonDanger {
+    outline: none;
+    background-color: rgb(156, 9, 9);
+    border: 0;
+    border-radius: 6px;
+    color: var(--white-color);
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.buttonDanger:hover {
+    background-color: transparent;
+    color: var(--dark-text);
+    border: 1px solid rgb(156, 9, 9);
+}
+
+.buttonTwo {
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    border-radius: 6px;
+    border: 1px solid var(--yellow-button);
+    color: var(--dark-text);
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.buttonTwo:hover {
+    background-color: var(--yellow-button);
+    color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-text);
+}
+
+a:hover {
+    color: var(--yellow-button);
+}
+
+p {
+    font-size: 20px;
+}
+
+.main-title {
+    color: var(--yellow-button);
+}
+
+.title {
+    text-align: center;
+    color: var(--yellow-button);
+}
+
+/* Navigation */
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+    height: 10vh;
+    position: fixed;
+    width: 83%;
+    background-color: var(--white-color);
+    border-bottom: 0.2px solid var(--yellow-button);
+}
+
+.stile {
+    color: var(--yellow-button);
+}
+
+.navigation {
+    margin-left: auto;
+    font-size: 20px;
+}
+
+.navigation a {
+    padding: 10px 20px;
+}
+
+/* Content with description */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    height: 100vh;
+}
+
+.con {
+    max-width: 500px;
+}
+
+.content p {
+    font-size: 24px;
+    line-height: 1.9;
+}
+
+/* Embedded video */
+
+.embedded-video {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-props {
+    width: 720px;
+    height: 410px;
+}
+
+/* Benefits of the system */
+
+.benefits-holder {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    flex: 1;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    border: 1px solid var(--dark-text);
+    border-radius: 6px;
+}
+
+.text-part {
+    padding: 20px;
+    height: auto;
+}
+
+.benefit img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+}
+
+
+/* Umuryango */
+
+.family {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.prop {
+    flex: 1;
+    background-color: transparent;
+    border: 2px solid var(--yellow-button);
+    padding: 50px 20px;
+    font-size: 25px;
+    border-radius: 6px;
+    margin: 10px;
+    text-align: center;
+}
+
+.prop:hover {
+    background-color: var(--yellow-button);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.imihigo {
+    min-height: 100vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    font-size: 20px;
+}
+
+.imihigo-parts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}

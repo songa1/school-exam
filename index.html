@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUHIGURE MU MURYANGO - Ahabanza</title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="logo">
+                <h1>DUHI<span class="stile">GURE</span></h1>
+            </div>
+            <div class="navigation">
+                <a href="#">Ahabanza</a>
+                <a href="#video">Sobanukirwa</a>
+                <a href="#benefits">Inyungu</a>
+                <button class="buttonTwo" id="log">Injira</button>
+                <button class="buttonOne" id="reg">Iyandikishe</button>
+            </div>
+            <i class="fas fa-bars" id="menu"></i>
+            <i class="fas fa-times" id="menu-close"></i>
+        </div>
+        <div class="content">
+            <div class="con">
+                <h1 class="main-title">DUHIGURE MU MURYANGO</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe inventore commodi excepturi, quas, quos quia, dicta placeat amet porro nostrum ea libero tempore assumenda sapiente! Deleniti veniam reprehenderit facere sunt.</p>
+                <button class="buttonOne" onclick="goto()">Sobanukirwa</button>
+            </div>
+        </div>
+        <div class="embedded-video" id="video">
+            <h1 class="title">Sobanukirwa uko urubuga rukora</h1>
+            <iframe class="video-props" src="https://www.youtube.com/embed/fAoYlCti3Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="benefits-holder" id="benefits">
+            <h1 class="title">Inyungu zo gukoresha urubuga</h1>
+            <div class="benefits">
+                <div class="benefit">
+                    <img src="./images/imihigo.jpg" alt="Umenya aho imihogo yawe igeze">
+                    <div class="text-part">
+                        <h1>Umenya aho imihigo yawe igeze</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, atque. Iste provident repudiandae nihil, accusantium culpa ipsum voluptates rem quaerat!</p>
+                    </div>
+                    
+                </div>
+                <div class="benefit">
+                    <img src="./images/imihigo.jpg" alt="Umenya aho imihogo yawe igeze">
+                    <div class="text-part">
+                        <h1>Umenya aho imihigo yawe igeze</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, atque. Iste provident repudiandae nihil, accusantium culpa ipsum voluptates rem quaerat!</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <img src="./images/imihigo.jpg" alt="Umenya aho imihogo yawe igeze">
+                    <div class="text-part">
+                        <h1>Umenya aho imihigo yawe igeze</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, atque. Iste provident repudiandae nihil, accusantium culpa ipsum voluptates rem quaerat!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <hr>
+            <div>
+                <h1 class="main-title">DUHIGURE MU MURYANGO</h1>
+                <p>&copy; Achille Songa 2021</p>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header">
+              
+              <h2>Iyandikishe wowe n'umuryango wawe muhige imihigo kandi muzabimenye n'igihe imihigo yanyu yagezweho.</h2>
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Umurenge</label>
+                      <select class="form-select" aria-label="Default select example" id="umurenge">
+                        <option selected>Hitamo hano..</option>
+                        <option value="1">Ruzinganjwiri</option>
+                        <option value="2">Bumbogo</option>
+                      </select>
+                      <small id="emailHelp" class="form-text text-muted">Hitamo umurenge utuyemo</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Amazina</label>
+                        <input type="text" class="form-control" aria-describedby="emailHelp" id="izina" placeholder="Amazina">
+                        <small id="emailHelp" class="form-text text-muted">Shyiramo izina ry'umukuru w'umuryango</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Ikiciro cy'ubudehe</label>
+                        <select class="form-select" aria-label="Default select example" id="ubudehe">
+                            <option selected>Hitamo hano..</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                      </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Ijambobanga</label>
+                      <input type="password" class="form-control" id="ijambobanga" placeholder="Ijambobanga ry'umuryango">
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+                <button class="buttonTwo" id="stop">Hagarika</button>
+                <button class="buttonOne" id="move">Emeza!</button>
+            </div>
+          </div>
+      
+    </div>
+
+    <div id="loginModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header">
+              
+              <h2>Injira utangire gukora imihigo.</h2>
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Umurenge</label>
+                      <select class="form-select" aria-label="Default select example" id="umurengeLog">
+                        <option selected>Hitamo hano..</option>
+                        <option value="1">Ruzinganjwiri</option>
+                        <option value="2">Bumbogo</option>
+                      </select>
+                      <small id="emailHelp" class="form-text text-muted">Hitamo umurenge utuyemo</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Amazina</label>
+                        <input type="text" class="form-control" aria-describedby="emailHelp" id="izinaLog" placeholder="Amazina">
+                        <small id="emailHelp" class="form-text text-muted">Shyiramo izina ry'umukuru w'umuryango</small>
+                      </div>
+
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Ijambobanga</label>
+                      <input type="password" class="form-control" id="ijambobangaLog" placeholder="Ijambobanga ry'umuryango">
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+                <button class="buttonTwo" id="stopTwo">Hagarika</button>
+                <button class="buttonOne" id="moveLogin">Emeza kwinjira!</button>
+            </div>
+          </div>
+      
+    </div>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/responsive-menu.js"></script>
+</body>
+</html>

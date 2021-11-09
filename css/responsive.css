@@ -1,0 +1,48 @@
+#menu {
+    color: var(--dark-text);
+    display: none;
+    margin-left: auto;
+    font-size: 20px;
+}
+
+#menu-close {
+    display: none;
+    margin-left: auto;
+    font-size: 20px;
+}
+
+@media (max-width: 870px){
+    .head {
+        width: 100%;
+        left: 0;
+        padding: 10px;
+    }
+    .video-props {
+        max-width: 400px;
+        max-height: 230px;
+    }
+}
+
+@media (max-width: 640px){
+    .navigation {
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: var(--yellow-button);
+        color: var(--white-color);
+        width: 30%;
+        text-align: start;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    a:hover {
+        color: var(--white-color);
+    }
+}
